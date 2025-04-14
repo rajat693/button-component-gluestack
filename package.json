@@ -13,7 +13,7 @@
     "index.tsx"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json && node scripts/copy-index.cjs",
+    "build": "tsc --project tsconfig.json",
     "prepare": "npm run build",
     "postinstall": "node scripts/copy-index.cjs"
   },
