@@ -1,11 +1,16 @@
 {
   "name": "button-component-gluestack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "git@github.com:rajat693/button-component-gluestack.git",
   "author": "rajat693 <rajatchaudhary.rc693@gmail.com>",
   "license": "MIT",
+  "files": [
+    "dist",
+    "copy-index.js",
+    "index.tsx"
+  ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "postinstall": "node copy-index.js"
