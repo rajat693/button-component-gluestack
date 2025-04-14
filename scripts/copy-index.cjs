@@ -5,8 +5,13 @@ const path = require("path");
 
 // Correct source path - looking for index.tsx at package root
 const source = path.join(__dirname, "..", "index.tsx");
-const targetDir = path.join(process.cwd(), "components", "ui", "button");
-const targetFile = path.join(targetDir, "index.tsx"); // Fix the target path
+const targetFile = path.join(
+  process.cwd(),
+  "components",
+  "ui",
+  "button",
+  "index.tsx"
+);
 
 // Create directory path recursively if it doesn't exist
 fs.mkdirSync(targetDir, { recursive: true });
