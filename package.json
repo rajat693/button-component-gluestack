@@ -1,0 +1,30 @@
+{
+  "name": "button-component-gluestack",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:rajat693/button-component-gluestack.git",
+  "author": "rajat693 <rajatchaudhary.rc693@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "postinstall": "node copy-index.js"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.27.0",
+    "@gluestack-ui/nativewind-utils": "^1.0.26",
+    "@types/react": "^19.1.1",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "react": "^19.1.0",
+    "react-native": "^0.79.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
