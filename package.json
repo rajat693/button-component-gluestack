@@ -1,6 +1,7 @@
 {
   "name": "button-component-gluestack",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "description": "Button component for Gluestack UI",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "git@github.com:rajat693/button-component-gluestack.git",
@@ -8,13 +9,20 @@
   "license": "MIT",
   "files": [
     "dist",
-    "copy-index.js",
+    "scripts",
     "index.tsx"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json",
-    "postinstall": "node copy-index.js"
+    "build": "tsc --project tsconfig.json && node scripts/copy-index.cjs",
+    "prepare": "npm run build",
+    "postinstall": "node scripts/copy-index.cjs"
   },
+  "keywords": [
+    "react-native",
+    "gluestack",
+    "ui",
+    "button"
+  ],
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
