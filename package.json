@@ -1,6 +1,6 @@
 {
   "name": "button-component-gluestack",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Button component for Gluestack UI",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
