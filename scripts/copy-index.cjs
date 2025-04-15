@@ -3,9 +3,15 @@ console.log("🔧Running copy-index script...");
 const fs = require("fs");
 const path = require("path");
 
-// Correct source path - looking for index.tsx at package root
-const source = path.join(__dirname, "..", "index.tsx");
-const targetDir = path.join(process.cwd(), "components", "ui", "button");
+// Get the package root directory
+const packageRoot = path.resolve(__dirname, "..");
+// const packageRoot = path.resolve(process.cwd());
+
+// Get the Expo app root directory (one level up from node_modules)
+const expoAppRoot = path.resolve(packageRoot, "..", "..");
+
+const source = path.join(packageRoot, "index.tsx");
+const targetDir = path.join(expoAppRoot, "components", "ui", "button");
 const targetFile = path.join(targetDir, "index.tsx");
 
 // Create directory path recursively if it doesn't exist

@@ -1,6 +1,6 @@
 import React from "react";
 //@ts-ignore
-import { createButton } from "@gluestack-button-component";
+import { createButton } from "button-component-gluestack";
 import { tva } from "@gluestack-ui/nativewind-utils/tva";
 import {
   withStyleContext,
