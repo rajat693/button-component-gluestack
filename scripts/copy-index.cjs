@@ -23,6 +23,6 @@ fs.copyFile(source, targetFile, (err) => {
     console.error("Source path:", source);
     console.error("Target path:", targetFile);
   } else {
-    console.log("✅ Successfully copied index.tsx to components/ui/button/");
+    console.log("✅ Successfully copied index.tsx to components/ui/button/index.tsx file");
   }
 });
